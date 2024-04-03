@@ -1,0 +1,22 @@
+<!-- Year filter buttons -->
+<div class="filter-group">
+    <button *ngFor="let year of years" (click)="filterByYear(year)">{{ year }}</button>
+  </div>
+  
+  <!-- Successful launch filter buttons -->
+  <div class="filter-group">
+    <button (click)="filterByLaunch(true)">Successful Launch</button>
+    <button (click)="filterByLaunch(false)">Failed Launch</button>
+  </div>
+  
+  <!-- Successful land filter buttons -->
+  <div class="filter-group">
+    <button (click)="filterByLand(true)">Successful Land</button>
+    <button (click)="filterByLand(false)">Failed Land</button>
+  </div>
+  
+  <!-- Mission List goes here -->
+  <div *ngFor="let mission of filteredMissions">
+    <!-- mission card markup -->
+  </div>
+  

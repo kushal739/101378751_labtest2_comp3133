@@ -1,0 +1,16 @@
+.filter-group {
+    margin: 10px 0;
+  }
+  
+  .filter-group button {
+    margin-right: 5px;
+    padding: 5px 10px;
+    background-color: #ddd;
+    border: 1px solid #aaa;
+    cursor: pointer;
+  }
+  
+  .filter-group button:hover {
+    background-color: #ccc;
+  }
+  

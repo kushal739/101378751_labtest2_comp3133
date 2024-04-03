@@ -1,0 +1,13 @@
+<h2>Mission List</h2>
+
+
+<ul>
+  <li *ngFor="let mission of missions">
+    <a routerLink="/details/{{ mission.flight_number }}">
+      <img src="{{ mission.links.mission_patch_small }}" alt="mission patch" />
+      <h1>{{ mission.mission_name }}</h1>
+      <h3>{{ mission.launch_year }}</h3>
+      <p>{{ mission.details }}</p>
+    </a>
+  </li>
+</ul>
